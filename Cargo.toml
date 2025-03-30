@@ -18,9 +18,9 @@ arrow = "54"
 arrow-flight = { version = "54", features = ["flight-sql-experimental"] }
 arrow-json = "54"
 async-trait = "0.1.83"
-datafusion = "45.0.0"
+datafusion = "46.0.1"
 datafusion-federation = { version = "0.3.6" }
-datafusion-substrait = "45.0.0"
+datafusion-substrait = "46.0.1"
 futures = "0.3.31"
 tokio = { version = "1.41", features = ["full"] }
 tonic = { version = "0.12", features = [
@@ -29,3 +29,7 @@ tonic = { version = "0.12", features = [
     "codegen",
     "prost",
 ] }
+
+[patch.crates-io]
+datafusion-federation = { git = "https://github.com/ahirner/datafusion-federation.git", branch = "chore/df_46" }
+
